@@ -9,6 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+  <link rel="stylesheet" href="styles.css">
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -42,7 +43,7 @@
     }
   </style>
 </head>
-<body>
+<body style="background-color:darkgrey;">
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -65,8 +66,9 @@
   </div>
 </nav>
   
-<div class="container-fluid text-center">    
+<div class="container-fluid text-center background-color-SlateGray">    
   <div class="row content">
+    <div class="w3-container w3-SlateGray">
     <div class="col-sm-2 sidenav">
       <p><a href="https://github.com/michaeltonyferrari">Github</a></p>
       <p><a href="#">Link</a></p>
@@ -79,6 +81,11 @@
       <h3>Interest</h3>
       <p>
       Ever since a young age, I've always had a passion for computers and mathematics. Over the years I have taken on the challenges of learning new programming languages, algroithms, hardware and different operating systems. With the never ending growth of technology, I look forward to following my dreams and learning as much as I can.
+      </p>
+
+      <p>
+        The current project at hand is a device to help the visually impaired. Using ultrasonic sensors, laser sensors and a camera, the device will guide the user with ease through daily life and replace the clunky walking stick.  
+        <img src="ultra.jpg"  class = "rotate90" alt="UltraSonic Sensor" width="320" height="300">
       </p>
     </div>
     <div class="col-sm-2 sidenav">
@@ -106,7 +113,7 @@
     </div>
   </div>
 </div>
-
+</div>
 <script>
   function myfunction(){
     location.href = "About"
