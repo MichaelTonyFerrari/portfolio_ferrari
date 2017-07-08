@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +8,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-  <link rel="stylesheet" href="styles.css">
+  /*<link rel="stylesheet" href="styles.css">
+  */
+  @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -41,6 +42,14 @@
       }
       .row.content {height:auto;} 
     }
+    .btn-default{
+      background: #000;
+      color: #fff;
+    }
+    .btn-default:hover{
+      background: #000
+      color: #fff;
+    }
   </style>
 </head>
 <body style="background-color:darkgrey;">
@@ -53,14 +62,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Where to?</a>
+      <a class="navbar-brand" href="#">
+      <font color="red">
+      Where to?
+      </font>
+      </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="michaelferraroportfolio/About ">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+      <button type="button" class="btn btn-danger active">Home</button>
+      <button type="button" class="btn btn-danger active">About</button>
+      <button type="button" class="btn btn-danger active">Projects</button>
+      <button type="button" class="btn btn-danger active">Contact</button>
       </ul>
     </div>
   </div>
@@ -72,47 +85,41 @@
     <div class="col-sm-2 sidenav">
       <p><a href="https://github.com/michaeltonyferrari">Github</a></p>
       <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
+       <img class ="center-block" img src="peng.png"  class ="img-rounded" alt="peng.jpg" width="160" height="150" >
+
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Welcome to the Ferraro Project</h1>
-      <p>An enthusiastic and self-driven Computer Engineer seeking challenges that demands the best of my professional ability, in terms of: analytical skills and team work. In addition, to increase my overall knowledge by consistently learning throughout the field. </p>
+      <h1>
+      <b>
+      <i>  
+      <strong>
+      Welcome to the Ferraro Project</h1>
+      </strong>
+      </i>
+      </b>
+      <p>
+      <b>
+      I'm a computer enthusiast and math loving nerd. Officially I'm currently finishing up my bachelor's degree in computer engineering while working through some projects, including one that will help the visually impaired. Intresting enough, today there isn't much technology to help guide them through everyday life besides there walking stick. Check out more on this in the projects section! 
+      </b>
+      </p>
       <hr>
       <h3>Interest</h3>
       <p>
-      Ever since a young age, I've always had a passion for computers and mathematics. Over the years I have taken on the challenges of learning new programming languages, algroithms, hardware and different operating systems. With the never ending growth of technology, I look forward to following my dreams and learning as much as I can.
-      </p>
-
-      <p>
         The current project at hand is a device to help the visually impaired. Using ultrasonic sensors, laser sensors and a camera, the device will guide the user with ease through daily life and replace the clunky walking stick.  
-        <img src="ultra.jpg"  class = "rotate90" alt="UltraSonic Sensor" width="320" height="300">
+        <img class ="img-responsive" img src="ultra.jpg"  class ="img-rounded" alt="UltraSonic Sensor" width="400" height="500">
       </p>
     </div>
     <div class="col-sm-2 sidenav">
-      <div class="well well-sm">
-        <p>
-        <i>
-        "We can not solve our problems with the same thinking we used when we created them." 
-        </i>
-        </p>
-      </div>
-      <div class="well well-sm">
-        <p>
-        <i>
-        "Education is what remains after one has forgotten what one has learned in school."
-        </i>
-        </p>
-      </div>
+     
       <div class="well">
         <p>
         <i>
-        "Design is not just what it looks like and feels like. Design is how it works."
+        "Most people make the mistake of thinking design is what it looks like. People think it’s this veneer – that the designers are handed this box and told, ‘Make it look good!’ That’s not what we think design is. It’s not just what it looks like and feels like. Design is how it works.
+        -Steve Jobs"
         </i>
         </p>
-      </div>
-    </div>
+   
   </div>
-</div>
 </div>
 <script>
   function myfunction(){
